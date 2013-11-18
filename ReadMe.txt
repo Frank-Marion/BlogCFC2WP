@@ -1,4 +1,6 @@
-This utility will migrate your data from a BlogCFC db into an existing Wordpress 2.0 db.  It has been tested on CFMX7 and BlueDragon 6.2 running on Windows against a MySQL 4 db and BlogCFC v. 3.8.  The schema for v.5 of BlogCFC has some new fields added but it doesn't look significantly different so it will probably work with minor modification. All the logic is contained in cfc's and there is no funky sql syntax or stored procs so it should work with other databases.  This is what you do to make it work:
+NOTE: 
+
+This utility will migrate your data from a BlogCFC db into an existing Wordpress 3.5+ db.  It has been tested on CFMX7 and BlueDragon 6.2 running on Windows against a MySQL 4 db and BlogCFC v. 3.8.  The schema for v.5 of BlogCFC has some new fields added but it doesn't look significantly different so it will probably work with minor modification. All the logic is contained in cfc's and there is no funky sql syntax or stored procs so it should work with other databases.  This is what you do to make it work:
 
 
 1. Download the latest Wordpress installer and setup a new instance of Wordpress on your server (I'm assuming you have PHP and CF running on the same machine).
@@ -23,4 +25,13 @@ That's it. Let me know if it you make it work in other environments. This code i
 Sean Tierney
 sean@grid7.com
 
+--------------------------------------------------------------------------------------------------------------------------
+NOTE: 2013-11-17
+This version has been updated to handle Wordpress 3.5 and above. It is no longer backwards compatible with Wordpress 2.0.
+Frank Marion <mail@frankmarion.com>
 
+This update is unsupported by Frank. I made the update because I needed it, and there may be those who will find this useful.
+
+You can find it here: http://www.frankmarion.com/2013/11/17/updated-blogcfc2wordpress-compatible-wp-35/
+
+Thank you to Sean Tierney for having written it in the first place.
